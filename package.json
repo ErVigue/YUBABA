@@ -1,45 +1,44 @@
 {
-    "name": "Yubaba_App",
-    "version": "1.0.0",
-    "description": "A simple CAP project.",
-    "repository": "<Add your repository here>",
-    "license": "UNLICENSED",
-    "private": true,
-    "dependencies": {
-      "@sap/cds": "^5",
-      "express": "^4"
+  "name": "Yubaba_App",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "https://github.com/ErVigue/YUBABA",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^5",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "sqlite3": "^5.0.2",
+    "grunt": "~0.4.0"
+  },
+  "scripts": {
+    "start": "cds run"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "env": {
+      "es2020": true,
+      "node": true,
+      "jest": true,
+      "mocha": true
     },
-    "devDependencies": {
-      "sqlite3": "^5.0.2",
-      "grunt": "~0.4.0"
+    "globals": {
+      "SELECT": true,
+      "INSERT": true,
+      "UPDATE": true,
+      "DELETE": true,
+      "CREATE": true,
+      "DROP": true,
+      "CDL": true,
+      "CQL": true,
+      "CXL": true,
+      "cds": true
     },
-    "scripts": {
-      "start": "cds run"
-    },
-    "eslintConfig": {
-      "extends": "eslint:recommended",
-      "env": {
-        "es2020": true,
-        "node": true,
-        "jest": true,
-        "mocha": true
-      },
-      "globals": {
-        "SELECT": true,
-        "INSERT": true,
-        "UPDATE": true,
-        "DELETE": true,
-        "CREATE": true,
-        "DROP": true,
-        "CDL": true,
-        "CQL": true,
-        "CXL": true,
-        "cds": true
-      },
-      "rules": {
-        "no-console": "off",
-        "require-atomic-updates": "off"
-      }
+    "rules": {
+      "no-console": "off",
+      "require-atomic-updates": "off"
     }
   }
-  
+}
