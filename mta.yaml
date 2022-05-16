@@ -1,10 +1,9 @@
-ID: myproject
-_schema-version: '3.1'
-version: 0.0.1
-
-build-parameters:
-  before-all:
-    - builder: npm
-
+_schema-version: 2.1.0
+ID: com.sap.piper.node.hello.world
+version: 1.0.0
+description: A Hello World sample application
+provider: SAP Sample generator
 modules:
- ...
+  - name: piper.node.hello.world
+    type: nodejs
+    path: .
