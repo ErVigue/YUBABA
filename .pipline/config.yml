@@ -1,8 +1,7 @@
-general:
-  verbose: 'true'
 steps:
   mtaBuild:
    buildTarget: "CF"
+   verbose: true
 #  cloudFoundryDeploy:
 #    cloudFoundry:
 #      credentialsId: 'CF_Credentials'
