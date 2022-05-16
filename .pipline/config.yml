@@ -1,6 +1,7 @@
 steps:
-#  mtaBuild:
-#   buildTarget: 'CF'
+  mtaBuild:
+   buildTarget: 'CF'
+   applicationName: 'Yubaba_App'
 #  cloudFoundryDeploy:
 #    cloudFoundry:
 #      credentialsId: 'CF_Credentials'
