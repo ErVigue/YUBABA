@@ -4,8 +4,8 @@ steps:
    verbose: true
   cloudFoundryDeploy:
     cloudFoundry:
-      credentialsId: 'CF_Credentials'
-      apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com/'
-      org: 'COE_IE_ALM'
+      credentialsId: "CF_Credentials"
+      apiEndpoint: "https://api.cf.eu10.hana.ondemand.com/"
+      org: "COE_IE_ALM"
       space: 'Dev'
       verbose: true
