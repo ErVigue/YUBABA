@@ -1,9 +1,8 @@
 general:
-  verbose: true
+  verbose: 'true'
 steps:
   mtaBuild:
    buildTarget: "CF"
-   applicationName: "Yubaba_App"
 #  cloudFoundryDeploy:
 #    cloudFoundry:
 #      credentialsId: 'CF_Credentials'
