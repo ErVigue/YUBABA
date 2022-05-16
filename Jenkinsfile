@@ -8,7 +8,7 @@ node(){
   }
 
   stage('Build')   {
-      mtaBuild script:this, applicationName 
+      mtaBuild script:this, applicationName: 'Yubaba' 
   }
 
   stage('Deploy')   {
