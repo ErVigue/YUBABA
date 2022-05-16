@@ -8,7 +8,7 @@ node(){
   }
 
   stage('Build')   {
-      mtaBuild script:this
+      mtaBuild script:this, applicationName 
   }
 
   stage('Deploy')   {
