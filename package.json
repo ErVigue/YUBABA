@@ -10,7 +10,8 @@
       "express": "^4"
     },
     "devDependencies": {
-      "sqlite3": "^5.0.2"
+      "sqlite3": "^5.0.2",
+      "grunt": "~0.4.0"
     },
     "scripts": {
       "start": "cds run"
