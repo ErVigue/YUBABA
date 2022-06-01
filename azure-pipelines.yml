@@ -6,16 +6,15 @@
 trigger:
 - main
 
-
-
-pool: Default
-- task: CmdLine@2
-  inputs:
-    script: 'C:\agents\vsts-agent-win-x64-2.204.0\_work\ToscaCI\Client\ToscaCIClient.exe -m local -t junit -r C:\Temp\ToscaCI.xml'
+pool:
+  name: Default
+steps:
+- script: 'C:\agents\vsts-agent-win-x64-2.204.0\_work\ToscaCI\Client\ToscaCIClient.exe -m local -t junit -r C:\Temp\ToscaCI.xml'
+  displayName: ToscaCI
 
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: '**/ToscaCI*.xml'
+    testResultsFiles: '**/ToscaCI-*.xml'
     failTaskOnFailedTests: true
-    testRunTitle: 'Tosca CI Test Result'
+    testRunTitle: 'Publish Tosca Results'
