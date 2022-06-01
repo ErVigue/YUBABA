@@ -6,6 +6,8 @@
 trigger:
 - main
 
+
+
 pool: Default
 - task: CmdLine@2
   inputs:
