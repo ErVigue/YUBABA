@@ -8,7 +8,6 @@ trigger:
 
 pool: Default
 - task: CmdLine@2
-  displayName: 'Run ToscaCI'
   inputs:
     script: 'C:\agents\vsts-agent-win-x64-2.204.0\_work\ToscaCI\Client\ToscaCIClient.exe -m local -t junit -r C:\Temp\ToscaCI.xml'
 
